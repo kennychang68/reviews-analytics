@@ -10,13 +10,6 @@ with open('reviews.txt', 'r') as f:
 
 print('the file has been read out, totally', len(data), 'messages')
 
-#print(len(data[1]))
-#print(data[1])
-
-#all_len.append(len(data[0]))
-#all_len.append(len(data[1]))
-#all_len.append(len(data[2]))
-#print(all_len)
 
 
 # my code using while loop
@@ -27,8 +20,7 @@ while i <= (len(data)-1):
 	summary = summary + len(data[i])
 	i +=1
 
-print(all_len[999999])
-print(len(all_len))
+
 print(summary)
 print(summary/len(data))
 print(max(all_len))
@@ -36,6 +28,12 @@ print(min(all_len))
 
 
 
+#Allen's code using for loop (simpler)
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
+print(sum_len)
+print(sum_len/len(data))
 
 
 
