@@ -7,9 +7,7 @@ with open('reviews.txt', 'r') as f:
 		count +=1
 		if count % 10000 == 0:
 			print(len(data))
-
 print('the file has been read out, totally', len(data), 'messages')
-
 
 
 # my code using while loop
@@ -27,7 +25,6 @@ print(max(all_len))
 print(min(all_len))
 
 
-
 #Allen's code using for loop (simpler)
 sum_len = 0
 for d in data:
@@ -36,4 +33,9 @@ print(sum_len)
 print(sum_len/len(data))
 
 
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
 
+print(len(new))
